@@ -9,19 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      ZStack {
-          Color(uiColor: UIColor(red: 112, green: 71, blue: 235)).ignoresSafeArea()
-          VStack
-          {
-              HStack(content: {
-                  /*@START_MENU_TOKEN@*/HStack {
-                      Image(systemName: "location.circle.fill")
-                      Text("Placeholder")
-                  }/*@END_MENU_TOKEN@*/
-              })
-          }
+        ZStack {
+            //Background Color
+            Color(uiColor: UIColor(red: 112, green: 71, blue: 235)).ignoresSafeArea()
+            //Top bar
+            VStack
+            {
+                
+                TopBar()
+                Spacer()
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("Forecast report").foregroundColor(.white).font(.custom("", size: 18)).fontWeight(.black)
+                    
+                    
+                    Image(systemName: "chevron.up").foregroundColor(.white)
+                    Spacer()
+                }.padding(.vertical, 20).background(.white.opacity(0.1)).cornerRadius(20)
+            }.padding(20)
+            
         }
-      
+        
     }
 }
 
@@ -42,3 +51,5 @@ extension UIColor {
         )
     }
 }
+
+
