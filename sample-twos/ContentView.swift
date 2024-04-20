@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingForcaseModal = false
     var body: some View {
         ZStack {
             //Background Color
             Color(uiColor: UIColor(red: 112, green: 71, blue: 235)).ignoresSafeArea()
-            //Top bar
+       
             VStack
             {
                 
@@ -20,7 +21,15 @@ struct ContentView: View {
                 Spacer()
                 CenterCard()
                 Spacer()
-                BottomBar()
+                BottomBar().onTapGesture {
+                    showingForcaseModal.toggle()
+                }.sheet(isPresented: $showingForcaseModal, content: {
+                    
+                    ForcastModalView()
+                })
+              
+            
+                
             }.padding(20)
             
         }

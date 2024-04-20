@@ -17,8 +17,8 @@ struct CenterCard: View {
                     Image("cloud").resizable()
                         .frame(width: 79, height: 66)
                     VStack{
-                        Text("Today").foregroundColor(.white).font(.custom("", size: 24)).fontWeight(.bold)
-                        Text("Mon, 26 Apr").foregroundColor(.white).font(.custom("", size: 12)).fontWeight(.bold)
+                        Text("Today").foregroundColor(.white).font(.custom("DM Sans", size: 24)).fontWeight(.bold)
+                        Text("Mon, 26 Apr").foregroundColor(.white).font(.custom("DM Sans", size: 12)).fontWeight(.bold)
                     }
                 }
                 HStack( content:{

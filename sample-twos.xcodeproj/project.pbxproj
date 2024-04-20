@@ -14,6 +14,7 @@
 		18BCBB1B2BD333E700838ADF /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB1A2BD333E700838ADF /* TopBar.swift */; };
 		18BCBB1D2BD334A000838ADF /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB1C2BD334A000838ADF /* BottomBar.swift */; };
 		18BCBB1F2BD346BB00838ADF /* CenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB1E2BD346BB00838ADF /* CenterCard.swift */; };
+		18BCBB212BD34DAA00838ADF /* ForcastModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		18BCBB1A2BD333E700838ADF /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		18BCBB1C2BD334A000838ADF /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		18BCBB1E2BD346BB00838ADF /* CenterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCard.swift; sourceTree = "<group>"; };
+		18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				18BCBB1A2BD333E700838ADF /* TopBar.swift */,
 				18BCBB1C2BD334A000838ADF /* BottomBar.swift */,
 				18BCBB1E2BD346BB00838ADF /* CenterCard.swift */,
+				18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */,
 			);
 			path = "sample-twos";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				18BCBB1D2BD334A000838ADF /* BottomBar.swift in Sources */,
 				18BCBB0E2BD3137B00838ADF /* ContentView.swift in Sources */,
 				18BCBB1B2BD333E700838ADF /* TopBar.swift in Sources */,
+				18BCBB212BD34DAA00838ADF /* ForcastModalView.swift in Sources */,
 				18BCBB1F2BD346BB00838ADF /* CenterCard.swift in Sources */,
 				18BCBB0C2BD3137B00838ADF /* sample_twosApp.swift in Sources */,
 			);
