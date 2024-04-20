@@ -13,7 +13,7 @@ struct ContentView: View {
         ZStack {
             //Background Color
             Color(uiColor: UIColor(red: 112, green: 71, blue: 235)).ignoresSafeArea()
-       
+            
             VStack
             {
                 
@@ -27,9 +27,6 @@ struct ContentView: View {
                     
                     ForcastModalView()
                 })
-              
-            
-                
             }.padding(20)
             
         }
