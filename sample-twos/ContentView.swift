@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingForcaseModal = false
+   
     var body: some View {
         ZStack {
             //Background Color

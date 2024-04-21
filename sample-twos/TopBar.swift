@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TopBar: View {
+    @State private var showNotificationModal = false
     var body: some View {
         HStack(content: {
             HStack {
@@ -22,7 +23,11 @@ struct TopBar: View {
                 Image("notification").resizable()
                     .frame(width: 24, height: 26)
                 
-            }.padding(.all, 10).background(.white.opacity(0.1)).cornerRadius(10)
+            }.padding(.all, 10).background(.white.opacity(0.1)).cornerRadius(10).onTapGesture {
+                showNotificationModal.toggle()
+            }.sheet(isPresented: $showNotificationModal, content: {
+                ForcastModalView()
+            })
         })
     }
 }

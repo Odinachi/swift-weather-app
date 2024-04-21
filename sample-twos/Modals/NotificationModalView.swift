@@ -1,8 +1,10 @@
-//
-//  NotificationModalView.swift
-//  sample-twos
-//
-//  Created by  Apple on 21/04/2024.
-//
+import SwiftUI
 
-import Foundation
+struct NotificationModalView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        Text("Sample modal")
+                        .presentationDetents([.medium, .large])
+    }
+}

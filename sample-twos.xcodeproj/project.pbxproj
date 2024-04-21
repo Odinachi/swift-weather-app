@@ -15,6 +15,7 @@
 		18BCBB1D2BD334A000838ADF /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB1C2BD334A000838ADF /* BottomBar.swift */; };
 		18BCBB1F2BD346BB00838ADF /* CenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB1E2BD346BB00838ADF /* CenterCard.swift */; };
 		18BCBB212BD34DAA00838ADF /* ForcastModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */; };
+		18BCBB232BD5606C00838ADF /* NotificationModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCBB222BD5606C00838ADF /* NotificationModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		18BCBB1C2BD334A000838ADF /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		18BCBB1E2BD346BB00838ADF /* CenterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCard.swift; sourceTree = "<group>"; };
 		18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastModalView.swift; sourceTree = "<group>"; };
+		18BCBB222BD5606C00838ADF /* NotificationModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		18BCBB0A2BD3137B00838ADF /* sample-twos */ = {
 			isa = PBXGroup;
 			children = (
+				18BCBB242BD5607400838ADF /* Modals */,
 				18BCBB0B2BD3137B00838ADF /* sample_twosApp.swift */,
 				18BCBB0D2BD3137B00838ADF /* ContentView.swift */,
 				18BCBB0F2BD3137C00838ADF /* Assets.xcassets */,
@@ -66,7 +69,6 @@
 				18BCBB1A2BD333E700838ADF /* TopBar.swift */,
 				18BCBB1C2BD334A000838ADF /* BottomBar.swift */,
 				18BCBB1E2BD346BB00838ADF /* CenterCard.swift */,
-				18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */,
 			);
 			path = "sample-twos";
 			sourceTree = "<group>";
@@ -77,6 +79,15 @@
 				18BCBB122BD3137C00838ADF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18BCBB242BD5607400838ADF /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				18BCBB202BD34DAA00838ADF /* ForcastModalView.swift */,
+				18BCBB222BD5606C00838ADF /* NotificationModalView.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 				18BCBB212BD34DAA00838ADF /* ForcastModalView.swift in Sources */,
 				18BCBB1F2BD346BB00838ADF /* CenterCard.swift in Sources */,
 				18BCBB0C2BD3137B00838ADF /* sample_twosApp.swift in Sources */,
+				18BCBB232BD5606C00838ADF /* NotificationModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
