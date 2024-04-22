@@ -30,7 +30,7 @@ struct CenterCard: View {
             Spacer()
         }.padding(.vertical, 30).background(.white.opacity(0.1)).cornerRadius(15).overlay(
             RoundedRectangle(cornerRadius: 15)
-                .stroke(.base, lineWidth: 1)
+                .stroke(.white.opacity(0.5), lineWidth: 1)
         )
     }
 }
