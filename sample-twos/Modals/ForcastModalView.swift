@@ -11,7 +11,15 @@ struct ForcastModalView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        Text("Sample modal")
-                        .presentationDetents([.medium, .large])
+        VStack(content: {
+            
+            HStack{
+                Text("Placeholder")
+                
+                Image(systemName: "chevron.down")
+            }.foregroundColor(.base)
+            
+        })
+            .presentationDetents([.medium, .large]) .presentationCornerRadius(30).presentationDragIndicator(.visible)
     }
 }

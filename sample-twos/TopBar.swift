@@ -26,7 +26,7 @@ struct TopBar: View {
             }.padding(.all, 10).background(.white.opacity(0.1)).cornerRadius(10).onTapGesture {
                 showNotificationModal.toggle()
             }.sheet(isPresented: $showNotificationModal, content: {
-                ForcastModalView()
+                NotificationModalView().presentationCornerRadius(30)
             })
         })
     }
