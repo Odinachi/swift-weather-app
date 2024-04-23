@@ -17,6 +17,7 @@ struct ForcastModalView: View {
     
     var body: some View {
         VStack(content: {
+         
             Capsule()
                 .fill(Color.secondary)
                 .frame(width: 100, height: 3)
@@ -35,7 +36,7 @@ struct ForcastModalView: View {
             
             HStack(alignment: .center,content: {
              
-                ForEach(timeForcast.indices)
+                ForEach(timeForcast.indices,id: \.self)
                 {
                  
                     i in VStack(alignment: .center,content: {
@@ -64,7 +65,7 @@ struct ForcastModalView: View {
        
            VStack {
                 
-                ForEach(dayForcast.indices)
+                ForEach(dayForcast.indices,id: \.self)
                 {
                  
                     i in HStack(alignment: .center,content: {
@@ -84,7 +85,7 @@ struct ForcastModalView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(.border, lineWidth: 1)).padding(.horizontal, 20)
             
-            Spacer()
+         
         })
         .presentationDetents([.large]) .presentationCornerRadius(30).presentationDragIndicator(.hidden)
     }
