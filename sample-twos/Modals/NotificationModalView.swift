@@ -3,6 +3,8 @@ import SwiftUI
 struct NotificationModalView: View {
     @Environment(\.presentationMode) var presentationMode
     
+    @State private var selectedNoti  = 0
+    
     var body: some View {
         VStack(content: {
             
@@ -25,9 +27,43 @@ struct NotificationModalView: View {
                     
                     Text("Its a sunny day in your location").font(.custom("DM sans", size: 14)).fontWeight(.ultraLight).padding(.horizontal, 5).padding(.bottom, 20).padding(.top, 5)
                 })
+                
                 Spacer()
                 
-            }).background(.border.opacity(0.5)   )
+            }).background(selectedNoti == 1 ? .border.opacity(0.5):.white).onTapGesture {
+                selectedNoti = 1;
+            }
+            
+            Text("Earlier").frame(maxWidth: .infinity, alignment: .leading).foregroundColor(.black.opacity(0.5)).font(.custom("DM Sans", size: 10)).fontWeight(.ultraLight).padding(.horizontal, 20).padding(.vertical,10)
+            HStack (alignment: .bottom,content:{
+             
+                Image("Sunny").resizable().frame(width: 22, height: 22).padding(.bottom, 20).padding(.leading, 20)
+                VStack(alignment: .leading,content: {
+                    Text("1 Days ago").font(.custom("DM sans", size: 10)).fontWeight(.ultraLight).foregroundColor(.black.opacity(0.5)).padding(.top, 20).padding(.horizontal, 5)
+                    
+                    Text("Its a sunny day in your location").font(.custom("DM sans", size: 14)).fontWeight(.ultraLight).padding(.horizontal, 5).padding(.bottom, 20).padding(.top, 5)
+                })
+                
+                Spacer()
+                
+            }).background(selectedNoti == 2 ? .border.opacity(0.5):.white).onTapGesture {
+                selectedNoti = 2;
+            }
+            HStack (alignment: .bottom,content:{
+             
+                Image("Sunny").resizable().frame(width: 22, height: 22).padding(.bottom, 20).padding(.leading, 20)
+                VStack(alignment: .leading,content: {
+                    Text("1 Days ago").font(.custom("DM sans", size: 10)).fontWeight(.ultraLight).foregroundColor(.black.opacity(0.5)).padding(.top, 20).padding(.horizontal, 5)
+                    
+                    Text("Its a sunny day in your location").font(.custom("DM sans", size: 14)).fontWeight(.ultraLight).padding(.horizontal, 5).padding(.bottom, 20).padding(.top, 5)
+                })
+                
+                Spacer()
+                
+            }).background(selectedNoti == 3 ? .border.opacity(0.5):.white).onTapGesture {
+                selectedNoti = 3;
+            }
+            
             Spacer()
         })
                         .presentationDetents([.medium, .large]).presentationDragIndicator(.hidden)
