@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
+    
     @State private var showingForcaseModal = false
-   
+    
+
     var body: some View {
         ZStack {
             //Background Color
@@ -31,11 +34,6 @@ struct ContentView: View {
             }.padding(20)
             
         }.onAppear {
-           
-                // we have our API_URL value!
-            
-
-            
         }
         
     }
