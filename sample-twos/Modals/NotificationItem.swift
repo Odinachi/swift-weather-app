@@ -40,7 +40,7 @@ struct NotificationItem: View {
             
             Spacer()
         }
-        .background(isSelected ? Color.border.opacity(0.5) : Color.white)
+        .background(isSelected ? Color.border.opacity(0.5) : Color.clear)
         .onTapGesture {
             onTap()
         }

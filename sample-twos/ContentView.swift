@@ -12,7 +12,8 @@ struct ContentView: View {
     
     @State private var showingForcaseModal = false
     
-
+    @StateObject var vm =  WeatherViewModel()
+    
     var body: some View {
         ZStack {
             //Background Color
@@ -33,9 +34,7 @@ struct ContentView: View {
                 })
             }.padding(20)
             
-        }.onAppear {
         }
-        
     }
 }
 
