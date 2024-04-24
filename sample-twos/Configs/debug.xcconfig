@@ -1,0 +1,11 @@
+//
+//  debug.xcconfig
+//  sample-twos
+//
+//  Created by  Apple on 24/04/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY=8263c6b6a7c1b02657e1a6e28fb0caab

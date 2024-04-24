@@ -12,7 +12,7 @@ import Foundation
     @Published var weatherData = [ List]()
     
     func fetchData() async {
-        guard let downloadedWeather: [ List] = await WebService().downloadData(fromURL: "https://jsonplaceholder.typicode.com/posts") else {return}
+        guard let downloadedWeather: [ List] = await WebService().downloadData(fromURL: "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid=$\(Bundle.main.infoDictionary?["API_KEY"] ?? "") ") else {return}
         weatherData = downloadedWeather
     }
 }

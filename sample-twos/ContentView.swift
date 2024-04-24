@@ -30,6 +30,12 @@ struct ContentView: View {
                 })
             }.padding(20)
             
+        }.onAppear {
+           
+                // we have our API_URL value!
+            
+
+            
         }
         
     }
