@@ -14,6 +14,8 @@ struct ContentView: View {
     
     @StateObject var vm =  WeatherViewModel()
     
+    var  location =    LocationManager()
+    
     var body: some View {
         ZStack {
             //Background Color
@@ -34,6 +36,12 @@ struct ContentView: View {
                 })
             }.padding(20)
             
+        }.onAppear
+        {
+    
+            location.requestLocation()
+            
+    
         }
     }
 }
