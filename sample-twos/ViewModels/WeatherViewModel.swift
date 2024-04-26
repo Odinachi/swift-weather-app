@@ -39,32 +39,6 @@ class WeatherViewModel:  ObservableObject {
 }
 
 
-//class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-//    let manager = CLLocationManager()
-//
-//    @Published var location: CLLocationCoordinate2D?
-//
-//    override init() {
-//        super.init()
-//        manager.delegate = self
-//        requestLocation()
-//       
-//    }
-//
-//    func requestLocation() {
-//        manager.requestWhenInUseAuthorization()
-//    }
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        print("KKKKKKKKK kkk ")
-//        
-//        location = locations.first?.coordinate
-//    } 
-//    
-//    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-//            print("error:: \(error.localizedDescription)")
-//       }
-//}
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
@@ -85,6 +59,6 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-               print("error:: \(error.localizedDescription)")
+               print("error \(error.localizedDescription)")
           }
 }
