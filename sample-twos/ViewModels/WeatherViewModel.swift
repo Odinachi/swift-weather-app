@@ -15,10 +15,7 @@ class WeatherViewModel:  ObservableObject {
     
     func fetchData() async {
         print("Fetching data...")
-//        guard let latitude = self.latitude, let longitude = self.longitude else {
-//            print("Latitude or longitude is nil.")
-//            return
-//        }
+
         
         guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
             print("API key not found.")
